@@ -1,8 +1,20 @@
 <?php
-formaterDateFr("2018-02-23");
+$date = "2018-02-23";
 
-function formaterDateFr($date)
+$datefinal = new DateTime($date);
+echo formaterDateFr($datefinal);
+
+function formaterDateFr($datefinal)
 {
-    echo date($date);
+    $formater = new IntlDateFormatter(
+        'fr_FR',
+        IntlDateFormatter::FULL,
+        IntlDateFormatter::NONE,
+        'Europe/Paris',
+        IntlDateFormatter::GREGORIAN
+    );
+    $dateFrancais = $formater->format($datefinal);
+    return $dateFrancais;
 }
+?>
 
