@@ -13,3 +13,4 @@ function printtab($tab)
         $i++;
     }
 }
+?>

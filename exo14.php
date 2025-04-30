@@ -9,3 +9,4 @@ function adresscheck($adresse)
     else   
         echo "L'adresse e-mail est invalide";
 }
+?>

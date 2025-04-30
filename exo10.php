@@ -10,3 +10,4 @@ afficherInput($form);
 echo "<br>";
 alimenterListeDeroulante($formation);
 echo "<br><br><button>Submit</button>";
+?>

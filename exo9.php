@@ -7,3 +7,4 @@ function afficherRadio($nomsRadio)
     foreach ($nomsRadio as $v)
         echo "<input type=radio name=gender> ".$v."</input><br>";
 }
+?>
